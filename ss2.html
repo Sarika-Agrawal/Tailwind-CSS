@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RazorpayX UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-900 text-white h-screen">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gray-800 h-full p-5 space-y-7">
+        <h1 class="text-2xl font-bold mb-5">RazorpayX</h1>
+        <nav>
+          <ul class="space-y-6">
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-home mr-2"></i> Home</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-money-check-alt mr-2"></i> Payouts</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-file-alt mr-2"></i> Account Statement</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fa-regular fa-user mr-2"></i> Contacts</a
+              >
+            </li>
+            <hr class="border-t-2 border-gray-700" />
+            <li class="mb-3 flex">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-indian-rupee-sign mr-2"></i> Loans</a
+              ><button
+                href="#"
+                class="flex items-center text-white ml-2 bg-green-600 px-2 rounded-xl"
+              >
+                New
+              </button>
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center mb-2 text-gray-300"
+                ><i class="fas fa-truck-loading mr-2"></i> Vendor Payments</a
+              >
+              <div class="flex">
+                <button
+                  href="#"
+                  class="flex items-center text-white ml-4 bg-green-600 px-2 rounded-xl"
+                >
+                  New
+                </button>
+                <a href="#" class="text-blue-500 ml-2"
+                  >Invoice approvals &rarr;</a
+                >
+              </div>
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-file-invoice-dollar mr-2"></i> Tax Payments</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-paper-plane mr-2"></i> Payout Links</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-money-bill mr-2"></i> Payroll</a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#" class="flex items-center text-gray-300"
+                ><i class="fas fa-chart-bar mr-2"></i> Reports</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="w-4/5 p-8">
+        <!-- Top Bar -->
+        <div class="flex justify-between items-center mb-2">
+          <div class="ml-auto flex items-center space-x-2">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+              + Payout &darr;
+            </button>
+            <a href="#" class="flex items-center text-gray-300"
+              ><i class="fas fa-magnifying-glass mr-2 text-blue-500"></i
+            ></a>
+            <a href="#" class="flex items-center text-gray-300"
+              ><i class="fas fa-bullhorn mr-2 text-orange-500"></i
+            ></a>
+            <a href="#" class="flex items-center text-gray-300"
+              ><i class="fa-regular fa-user mr-2 text-blue-500"></i
+              ><i class="fas fa-circle-chevron-down text-blue-500"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="mb-4 p-4 rounded mx-60">
+          <div>
+            <i class="fas fa-x mr-3"></i
+            ><span class="text-lg text-gray-500">RazorpayX Lite </span
+            ><span class="text-xs text-gray-500">as of a few seconds ago </span>
+            <i class="fas fa-arrows-rotate text-gray-500"></i>
+          </div>
+          <div>
+            <span class="text-sm text-gray-500">₹</span
+            ><span class="text-2xl">100</span
+            ><span class="text-sm text-gray-500">.09</span>
+            <button class="bg-gray-900 text-blue-500 px-4 py-2 rounded ml-64">
+              + Add balance
+            </button>
+          </div>
+        </div>
+        <div
+          class="mb-4 p-4 mx-60 rounded border border-dotted border-gray-500"
+        >
+          🎉 You're all caught up. There are no more items pending on you.
+        </div>
+        <div class="mb-2 mx-60">
+          <span class="text-lg">Onboarding updates </span
+          ><span class="text-sm text-gray-400">(1)</span>
+        </div>
+        <div class="mb-4 p-4 bg-gray-800 rounded mx-60 flex items-center">
+          <div>
+            <img
+              src="https://www.bing.com/images/search?view=detailV2&ccid=IvZe%2bYAh&id=0428445595090DB684DD40DCC4ABE9A383DA6C66&thid=OIP.IvZe-YAhBA02_P5zeljoygHaCy&mediaurl=https%3a%2f%2fwww.indusind.com%2fiblogs%2fwp-content%2fuploads%2fcurrent-account-2.jpg&exph=400&expw=1060&q=current+account+image&simid=608047218216168158&FORM=IRPRST&ck=937BFBE53DD5E618DD028AF93F21042F&selectedIndex=2&itb=0"
+              alt="Icon"
+              class="w-12 h-12 mr-4"
+            />
+          </div>
+          <div>
+            <div class="text-xl font-bold mb-2">
+              Open your RazorpayX account.
+            </div>
+            <div class="mb-2">
+              Don't let bankache come in the way of your growth. Apply for your
+              RazorpayX account with a few basic details.
+            </div>
+            <div class="flex my-2">
+              <div class="w-1/4 h-1 bg-green-500 mx-1"></div>
+              <div class="w-1/4 h-1 bg-gray-600 mx-1"></div>
+              <div class="w-1/4 h-1 bg-gray-600 mx-1"></div>
+              <div class="w-1/4 h-1 bg-gray-600 mx-1"></div>
+            </div>
+            <div>
+              <span
+                ><button class="bg-blue-500 text-white px-4 py-2 rounded">
+                  Start application &rarr;
+                </button></span
+              >
+              <span class="text-gray-400 text-sm m-auto ml-96">0/4</span>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4 p-4 bg-gray-800 rounded mx-60 relative">
+          <div
+            class="absolute top-0 left-0 w-full h-1 bg-green-500 rounded-t-lg"
+          ></div>
+          <div class="flex mb-4 mt-2">
+            <div class="mr-20">
+              <div class="text-xl font-bold">Amazon Instant</div>
+              <div class="text-xl font-bold">Settlements</div>
+            </div>
+            <div class="ml-10">
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 mr-2 text-blue-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9 12l-2-2 2-2m2 2h-6m6 0l2 2-2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <div class="text-xl text-white">Let's get you started</div>
+              </div>
+              <div class="ml-8">
+                Complete your application and get instant access to your Amazon
+                payouts.
+              </div>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded mt-4 ml-8"
+              >
+                APPLY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4 p-4 bg-gray-800 rounded mx-60 relative">
+          <div
+            class="absolute top-0 left-0 w-full h-1 bg-green-500 rounded-t-lg"
+          ></div>
+          <div class="flex mb-4 mt-2">
+            <div class="mr-20">
+              <div class="text-xl font-bold">Creating payouts</div>
+              <div class="text-xl font-bold">in Live mode</div>
+            </div>
+            <div class="ml-10">
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 mr-2 text-gray-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9 12l-2-2 2-2m2 2h-6m6 0l2 2-2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <div class="text-gray-400 mb-1">
+                  Add balance to create payouts in Live mode
+                </div>
+              </div>
+              <hr class="border-t-2 border-gray-700 mb-1" />
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 mr-2 text-blue-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9 12l-2-2 2-2m2 2h-6m6 0l2 2-2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <div class="text-xl text-white">Create payout</div>
+              </div>
+              <div class="text-gray-400 ml-8">
+                There are multiple ways in which you can create the first
+                payout:
+              </div>
+              <button
+                class="bg-blue-500 text-white px-2 py-2 rounded mt-4 my-2 ml-8"
+              >
+                MAKE A PAYOUT
+              </button>
+              <button
+                class="bg-gray-600 text-white px-2 py-2 rounded mt-4 my-2"
+              >
+                SHOW APPS FOR ME
+              </button>
+              <button class="bg-gray-600 text-white px-2 py-2 rounded mt-4">
+                API PAYOUTS
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-gray-800 rounded mx-60 flex items-center">
+  <div class="flex mb-2">
+    <img
+      src="path-to-your-image.jpg"
+      alt="Image"
+      class="w-16 h-16 mr-4"
+    />
+  </div>
+  <div class="flex-1">
+    <div class="flex items-center mb-2">
+      <div class="flex-1">
+        <div class="flex items-center mb-2">
+          <div>
+            <div class="text-xl text-white font-bold"><i class="fas fa-slash mr-2"></i>Automate Bookkeeping For Payouts</div>
+            <div class="text-gray-300">
+              Close your books 60% faster and with better accuracy by
+            </div>
+            <div class="text-gray-300">
+              automating bookkeeping for your Payouts.
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="bg-gray-800 text-blue-700 px-4 py-2 rounded border border-blue-700"
+      >
+        Connect Zoho Books &rarr;
+      </button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
